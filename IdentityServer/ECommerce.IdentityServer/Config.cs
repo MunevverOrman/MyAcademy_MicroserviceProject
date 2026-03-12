@@ -16,7 +16,9 @@ namespace ECommerce.IdentityServer
         {
             new ApiResource("CatalogResource"){ Scopes={"CatalogFullPermission","CatalogReadPermission"}},
 
-            new ApiResource("OrderResource"){ Scopes={"OrderFullPermission"}}
+            new ApiResource("OrderResource"){ Scopes={"OrderFullPermission"}},
+
+            new ApiResource("BasketResource"){ Scopes={"BasketFullPermission"}}
 
         };
 
@@ -35,6 +37,7 @@ namespace ECommerce.IdentityServer
                 new ApiScope("CatalogFullPermission","Full Authorization For Catalog Operations"),
                 new ApiScope("CatalogReadPermission","Read Authorization For Catalog Operations"),
                 new ApiScope("OrderFullPermission","Full Authorization For Order Operations"),
+                new ApiScope("BasketFullPermission","Full Authorization For Basket Operations"),
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -54,7 +57,7 @@ namespace ECommerce.IdentityServer
                        IdentityServerConstants.LocalApi.ScopeName }
                },
 
-               //Admin
+               //kayıtlı kullanıcı
                new Client
                {
                    ClientId="ECommerceAdminId",
@@ -65,6 +68,7 @@ namespace ECommerce.IdentityServer
                    {
                        "CatalogFullPermission",
                        "OrderFullPermission",
+                       "BasketFullPermission",
                        IdentityServerConstants.StandardScopes.OpenId,
                        IdentityServerConstants.StandardScopes.Email,
                        IdentityServerConstants.StandardScopes.Profile,

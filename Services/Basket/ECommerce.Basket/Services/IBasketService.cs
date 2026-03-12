@@ -2,7 +2,7 @@
 
 namespace ECommerce.Basket.Services
 {
-    public interface IBasketServices
+    public interface IBasketService
     {
         Task<BasketTotalDto> GetBasketAsync(string userId);
 
