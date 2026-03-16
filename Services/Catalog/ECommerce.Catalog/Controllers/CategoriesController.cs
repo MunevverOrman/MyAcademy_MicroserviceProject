@@ -2,6 +2,7 @@
 using ECommerce.Catalog.Entities;
 using ECommerce.Catalog.Repositories.CategoryRepositories;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,7 @@ namespace ECommerce.Catalog.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
     public class CategoriesController(ICategoryRepository _categoryRepository) : ControllerBase
     {
         [HttpGet]
