@@ -1,4 +1,4 @@
-﻿using ECommerce.Discount.Business.Services;
+﻿using ECommerce.Discount.Business.Services.Coupons;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;

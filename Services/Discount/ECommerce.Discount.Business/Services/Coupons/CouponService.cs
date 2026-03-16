@@ -5,7 +5,7 @@ using FluentValidation;
 using Mapster;
 using Microsoft.EntityFrameworkCore;
 
-namespace ECommerce.Discount.Business.Services
+namespace ECommerce.Discount.Business.Services.Coupons
 {
     public class CouponService(ICouponRepository _couponRepository,IValidator<Coupon> _validator) : ICouponService
     {

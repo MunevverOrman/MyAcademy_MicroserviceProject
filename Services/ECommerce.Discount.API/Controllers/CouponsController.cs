@@ -1,5 +1,5 @@
 ﻿using ECommerce.Discount.Business.Dtos.Coupons;
-using ECommerce.Discount.Business.Services;
+using ECommerce.Discount.Business.Services.Coupons;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

@@ -11,7 +11,7 @@ namespace ECommerce.Discount.DataAccess.Context
         
         }
 
-        public DbSet<Coupon> Coupones { get; set; }
+        public DbSet<Coupon> Coupons { get; set; }
 
 
 

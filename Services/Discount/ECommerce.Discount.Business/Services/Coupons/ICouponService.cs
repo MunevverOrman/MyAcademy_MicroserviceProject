@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerce.Discount.Business.Services
+namespace ECommerce.Discount.Business.Services.Coupons
 {
     public interface ICouponService
     {     

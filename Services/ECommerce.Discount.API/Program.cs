@@ -10,7 +10,7 @@ builder.Services.AddBusinessServices();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
-    options.Authority = builder.Configuration["IdentitServerUrl"];
+    options.Authority = builder.Configuration["IdentityServerUrl"];
     options.Audience = "DiscountResource";
 });
 

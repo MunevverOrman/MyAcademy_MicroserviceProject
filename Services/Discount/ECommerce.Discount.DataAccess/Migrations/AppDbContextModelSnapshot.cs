@@ -42,7 +42,7 @@ namespace ECommerce.Discount.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Coupones");
+                    b.ToTable("Coupons");
                 });
 #pragma warning restore 612, 618
         }

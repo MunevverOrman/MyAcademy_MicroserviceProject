@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ECommerce.Discount.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260313185909_mig_initial")]
+    [Migration("20260316125120_mig_initial")]
     partial class mig_initial
     {
         /// <inheritdoc />
@@ -45,7 +45,7 @@ namespace ECommerce.Discount.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Coupones");
+                    b.ToTable("Coupons");
                 });
 #pragma warning restore 612, 618
         }
