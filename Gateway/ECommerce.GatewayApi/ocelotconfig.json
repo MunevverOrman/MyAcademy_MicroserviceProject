@@ -1,7 +1,9 @@
 {
   "Routes": [
 
-    //Catalog mikroservice
+
+
+    //Catalog Microservice
     {
       "UpstreamHttpMethod": [ "Get", "Put", "Post", "Delete" ],
       "UpstreamPathTemplate": "/services/catalog/{everything}",
