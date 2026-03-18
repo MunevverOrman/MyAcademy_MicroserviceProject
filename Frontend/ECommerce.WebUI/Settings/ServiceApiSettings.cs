@@ -5,6 +5,8 @@
 
         public string IdentityServerUrl { get; set; }
 
+        public string ApiGatewayUrl { get; set; }
+
         public ServiceApi Catalog { get; set; }
 
         public ServiceApi Basket { get; set; }
